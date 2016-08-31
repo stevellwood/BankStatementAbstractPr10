@@ -1,0 +1,64 @@
+Assignment 7 - The Savings class
+
+This assignment is to create a Savings class. A savings account is the same as an 
+Account except that is includes data for an interest rate. It also has a method that
+ calculates the amount of interest using the interest rate and deposits that amount 
+ into the savings account like any other deposit.
+
+The requirements
+
+Our Savings account is a new class and its class name must be Savings. It must inherit from
+ Account. It must do everything that the Account class does and do more because of the 
+ interest.
+
+There must be a new data item added to Savings which will hold the interest rate for the savings
+ account. The interest rate is around 1.5 percent. Expressed as a number, that would be 0.015
+  (Hint: think about defining a number that has a decimal point for the type). This 
+  data can be read and written. The getter and setter methods must be called {get/set}
+  InterestRate.
+
+This is also a need for a method called CalcDepositInterest(int months). 
+This method takes the interest rate stored in the Savings class and divides 
+it by 12 to get the interest rate per month. Then the rate per month is multiplied 
+by the months parameter to calculate the interest owed. Once the interest is calculated,
+ the deposit method must be used to deposit the money. If you choose to, when the 
+ interest rate is set, you can divide it by 12 at that point and store that number.
+  Then you would not have to divide the interest rate by 12 every time you calculate interest.
+
+The details
+
+You should use the same project you've been using the last two days. The Account project.
+ You do not need to create a new project or a new repository. As in previous project, 
+ work on your code until your ready to submit. Then use Git to add your files to your
+  repository, commit then, and push them up to GitHub.
+
+Note: I do expect you to use Git & GitHub in these assignments because learning 
+them well is part of this course.
+
+Once your files are up in GitHub, copy the link to your repository and paste that 
+into the URL for the assignment.
+
+How I will test your work
+
+As in Assignment 6, you will have an Account class and a Mainline class. 
+The Mainline class is how you tested your Account class functionality. For this assignment,
+you'll have another class called Savings.java in your project. I don't 
+care if there are other .java classes in your project because I won't be using them.
+
+What I'll do is have a project on my machine with a Mainline.java, Account.java, 
+and Savings.java. I will copy the text inside your Account.java and Savings.java into my file of the same name and run my Mainline.java. My tests will allow me to quickly see whether your Account.java and Savings.java classes perform as required. When the output shows me what I expect, the classes work fine.
+
+In assignment 6, I did essentially the same thing, but found that I could not run 
+my test because there were errors in the Account class because some added references
+ to other classes they create into the Account class and since I didn't include those additional classes,
+  they were missing references and I could not run my test. If I cannot run my test for
+   whatever reason, the assignment will be incomplete and you'll have to correct the issue and resubmit.
+
+The hints
+
+The way you designate that a new class inherits from another class is to add to the
+ class <classname> the word extends then the class you want to inherit from.
+
+The keyword super allows you to refer to the objects in the class you inherited from.
+ It is used mostly in the constructors of your new class to access constructors of the
+  inherited class.
